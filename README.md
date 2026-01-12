@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>vikasu.nariko23@gmail.com</title>
+    <title>vika-12345678.github.io</title>
 </head>
 <body>
     <h1><a href="mailto:vikasu.nariko23@gmail.com">Напишите мне</a></h1>
@@ -10,7 +10,7 @@
     <h2>Структура доменного имени моего сайта</h2>
     <p>На дату: <strong>12 января 2026 года</strong></p>
 
-    <p>Моё доменное имя: <code>vikasu.nariko23</code></p>
+    <p>Моё доменное имя: <code> vikasu.nariko23 </code></p>
 
     <h3>Иерархия доменного имени (от корня к хосту):</h3>
     <ul>
