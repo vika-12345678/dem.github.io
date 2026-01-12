@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>vika-12345678.github.io</title>
+    <title>https://vika-12345678.github.io</title>
 </head>
 <body>
     <h1><a href="mailto:vikasu.nariko23@gmail.com">Напишите мне</a></h1>
