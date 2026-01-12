@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Блог о доменном имени</title>
+    <title>vikasu.nariko23@gmail.com</title>
 </head>
 <body>
     <h1><a href="mailto:vikasu.nariko23@gmail.com">Напишите мне</a></h1>
