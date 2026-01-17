@@ -4,12 +4,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-body
-blockquote.q {
-color: #D4AF37;
-border-left: 4px solid #8B0000;
-font-style: italic;
-}{
+body {
 	background-color: #d2b48c;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -17,9 +12,9 @@ font-style: italic;
 	padding: 10px 10px 10px 10px;
 	font-family: sans serif;
     }
-@font-face {
-font-family: “Pudelinka”;
-src: url(”Fonts/pudelinka.ttf” ) format('truetype’);
-font-weight: normal;
-font-style: normal;
+
+blockquote.q {
+color: #D4AF37;
+border-left: 4px solid #8B0000;
+font-style: italic;
 }
