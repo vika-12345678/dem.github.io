@@ -122,6 +122,35 @@
       document.getElementById('result').innerText = Результат: ${M};
     }
   </script>
+        <h1>Ключ: 700 (в десятичной системе)</h1>
+
+    <div class="info">
+        <p>Исходный ключ: <strong>700</strong></p>
+        
+        <p>Для шифра Цезаря эффективный сдвиг определяется по модулю длины алфавита:</p>
+        
+        <ul>
+            <li><strong>Английский алфавит</strong> (26 букв):<br>
+                700 mod 26 = <strong>24</strong></li>
+            
+            <li><strong>Русский алфавит</strong> (33 буквы, без «ё»):<br>
+                700 mod 33 = <strong>7</strong></li>
+        </ul>
+
+        <p class="note">Таким образом, при шифровании:
+            <br>— на английском используйте сдвиг <code>K = 24</code>,
+            <br>— на русском — сдвиг <code>K = 7</code>.</p>
+    </div>
+
+</body>
+</html>
+    
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ключ 700</title>
+    <style>
 
 </body>
 </html>
