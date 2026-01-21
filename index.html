@@ -5,6 +5,119 @@
      <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <h2>сегодня 21 января, 2026</h2>                                                                                            
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Учебный пример RSA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .key {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      margin: 15px 0;
+    }
+    .note {
+      background: #fff8e1;
+      padding: 12px;
+      border-left: 4px solid #ffc107;
+      margin: 20px 0;
+    }
+    button {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .date {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+    
+  <div class="date">21 января 2026 года</div>
+
+  <h1>🔐 Учебный пример шифрования RSA</h1>
+
+  <h2>1. Генерация ключей</h2>
+  <p>Выбираем простые числа:</p>
+  <ul>
+    <li><code>p = 3</code></li>
+    <li><code>q = 5</code></li>
+  </ul>
+  <p>Вычисляем:</p>
+  <ul>
+    <li><code>n = p × q = 15</code></li>
+    <li><code>φ(n) = (p−1)(q−1) = 2 × 4 = 8</code></li>
+  </ul>
+  <p>Выбираем <code>e = 3</code> (взаимно простое с 8).</p>
+  <p>Находим <code>d</code>, такое что <code>(e × d) mod φ(n) = 1</code> → <code>d = 3</code>.</p>
+
+  <div class="key">
+    <strong>Открытый ключ:</strong> <code>(n, e) = (15, 3)</code><br>
+    <strong>Закрытый ключ:</strong> <code>(n, d) = (15, 3)</code>
+  </div>
+
+  <div class="note">
+    ⚠️ В этом примере <code>e = d</code> — это допустимо для обучения, но <strong>небезопасно</strong> в реальных системах!
+  </div>
+
+  <h2>2. Шифрование</h2>
+  <p>Сообщение: <code>m = 2</code> (например, «анализ готов»)</p>
+  <p>Условия: <code>0 &lt; m &lt; n</code> и <code>НОД(m, n) = 1</code> → выполнены.</p>
+  <p>Шифруем: <code>C = m<sup>e</sup> mod n = 2<sup>3</sup> mod 15 = 8</code></p>
+  <p>→ <strong>Шифротекст: C = 8</strong></p>
+
+  <h2>3. Расшифровка</h2>
+  <p>Расшифровываем: <code>M = C<sup>d</sup> mod n = 8<sup>3</sup> mod 15 = 512 mod 15 = 2</code></p>
+  <p>→ <strong>Исходное сообщение восстановлено!</strong> ✅</p>
+
+  <button onclick="decrypt()">Проверить расшифровку (8³ mod 15)</button>
+  <div id="result"></div>
+
+  <h2>💡 А в реальности?</h2>
+    <p>
+Число <code>n</code> состоит из <strong>600+ десятичных цифр</strong> (2048+ бит).<br>
+  Такие маленькие числа (<code>p=3, q=5</code>) используются <strong>только для обучения</strong>.</p>
+
+  <script>
+    function decrypt() {
+      const C = 8;
+      const d = 3;
+      const n = 15;
+      const M = (C ** d) % n;
+      document.getElementById('result').innerText = Результат: ${M};
+    }
+  </script>
+
+</html>
     <blockquote class=“q”>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
    
    <h2>Сегодня: 17 января 2026</h2>
